@@ -1,0 +1,37 @@
+.tooltip {
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+
+.tooltip span {
+  display: none;
+}
+
+.tooltip:hover span {
+  display: block;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 6px;
+  padding: 10px;
+  color: white;
+  background: black;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1;
+  z-index: 100;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 800px) {
+  .tooltip {
+    width: 42%;
+    margin: 30px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .tooltip {
+    width: 27%;
+    margin: 30px;
+  }
+}
